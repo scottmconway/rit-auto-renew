@@ -1,0 +1,11 @@
+{
+    "logging": {
+        "log_level": 20,
+        "gotify": {
+            "app_token": "",
+            "server_url": "https://gotify.example.com"
+        }
+    },
+    "username": "abc1234",
+    "password": "password"
+}
