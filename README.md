@@ -21,3 +21,9 @@ There's not much to say here - a valid config file includes your username, passw
 
 ## Usage
 Simply run `python3 rit_auto_renew.py` with a valid config (and perhap a defined `--config` path).
+
+The script uses a project-local build of Chrome for Testing,
+pinned by `CHROME_VERSION` in `rit_auto_renew.py`, instead of platform-managed Chrome installation.
+On first run it downloads the appropriate release into `./chrome_<version>`.
+
+Although Linux x86 / x64, macOS (Intel and Apple Silicon), and Windows x86 / x64 _should_ function properly, testing has only ocurred on Linux x64. This script won't work on Linux ARM, since undetected-chromedriver 3.5.5 does not select a native chromedrive for that platform.
